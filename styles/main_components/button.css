@@ -1,0 +1,82 @@
+/* ======== Button ======== */
+.button {
+border-radius: var(--radius-md);
+color: var(--color-text-strong);
+}
+
+.button__icon {
+    fill: var(--color-text-strong)
+}
+
+.button--disabled {
+    background-color: var(--color-bg-disabled);
+    color: var(--color-text-disabled);
+    cursor:not-allowed;
+}
+
+/* ======== Variations de taille ======== */
+.button--large {
+    padding: var(--button-lg-padding-y) var(--button-lg-padding-x);
+}
+
+/* ======== Variations de style ======== */
+.button--primary {
+    color: var(--color-text-on-color);
+    background-color: var(--color-button-primary);
+}
+.button--primary:hover {
+    background-color: var(--color-button-primary-hover);
+}
+
+/* ======== Variations de couleur OG======== */
+
+/* Anissa */
+.button--anissa {
+    background-color: var(--color-bg-anissa);
+    border: solid 1px var(--color-bg-anissa);
+}
+.button--anissa:hover {
+    background-color: var(--color-bg-transparent);
+}
+
+/* Hugo */
+.button--hugo {
+    color: var(--color-text-strong);
+    background-color: var(--color-bg-hugo);
+    border: solid 1px var(--color-bg-hugo);
+}
+.button--hugo:hover {
+    background-color: var(--color-bg-transparent);
+}
+
+/* Sacha */
+.button--sacha {
+    color: var(--color-text-strong);
+    background-color: var(--color-bg-sacha);
+    border: solid 1px var(--color-bg-sacha);
+}
+.button--sacha:hover {
+    background-color: var(--color-bg-transparent);
+}
+
+/* Shannen */
+.button--shannen {
+    color: var(--color-text-strong);
+    background-color: var(--color-bg-shannen);
+    border: solid 1px var(--color-bg-shannen);
+}
+.button--shannen:hover {
+    background-color: var(--color-bg-transparent);
+}
+
+/* Valentin */
+.button--valentin {
+    color: var(--color-text-strong);
+    background-color: var(--color-bg-valentin);
+    border: solid 1px var(--color-bg-valentin);
+}
+.button--valentin:hover {
+    background-color: var(--color-bg-transparent);
+}
+
+

@@ -1,0 +1,141 @@
+/* ======== Card ======== */
+/* Bloc */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: stretch;
+    /* À peu près ce qu'on veut mais pas tant (les cards ne remplissent pas toute la largeur en mobile - mais sans la max-width la largeur n'est pas normée sur les plus grands écrans)*/
+    justify-content: center;
+    align-items: center;
+    padding: var(--card-padding-y) var(--card-padding-x);
+    text-decoration: none;
+    background: var(--color-bg-default);
+    box-shadow: 0 0 1.5rem 0 var(--color-neutral-transparent);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+     transition: transform 0.5s, border-color 1s, box-shadow 0.2s ;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-border-praline);
+    box-shadow: 0 0 1.5rem 0 var(--color-brand-praline-20);
+}
+.card:checked {
+    border-color: var(--color-border-praline);
+}
+
+/* Elements */
+.card__description {
+    font-family: var(--font-default);
+    font-size: var(--text-body-m);
+    color: var(--color-text-subtle);
+    text-align: center ;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-sm);
+}
+
+.card__media {
+    width: 100%;
+    max-width: 8rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__price {
+    font-family: var(--font-default);
+    font-size: var(--text-body-m);
+    color: var(--color-text-strong);
+}
+
+.card__title {
+    font-family: var(--font-highlight);
+    font-size: var(--text-title-m);
+    color: var(--color-text-strong);
+    text-align: center;
+    }
+
+.card__type {
+    font-family: var(--font-default);
+    font-size: var(--text-body-m);
+    color: var(--color-text-subtle);
+}
+
+
+/* ======== Cards gallery ======== */
+.cards-gallery {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: var(--gap-md);
+}
+
+
+/* ======== Counter card ======== */
+.counter-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* À peu près ce qu'on veut mais pas tant (les cards ne remplissent pas toute la largeur en mobile - mais sans la max-width la largeur n'est pas normée sur les plus grands écrans)*/
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--gap-sm);
+    /* ======== Test éventuelle V2
+    padding: var(--card-padding-y) 0 0 0;
+    text-decoration: none;
+    background: var(--color-bg-white);
+    box-shadow: 0 0 1.5rem 0 var(--color-neutral-transparent);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+     transition: transform 0.5s, border-color 1s, box-shadow 0.2s ;
+     ======== */
+}
+
+
+.counter-card__content {
+     display: flex;
+    flex-direction: column;
+    /* À peu près ce qu'on veut mais pas tant (les cards ne remplissent pas toute la largeur en mobile - mais sans la max-width la largeur n'est pas normée sur les plus grands écrans)*/
+    justify-content: center;
+    align-items: center;
+    padding: var(--card-padding-y) var(--card-padding-x);
+    
+}
+
+
+/* ======== Counter ======== */
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-bg-white);
+  
+    border-radius: var(--radius-md);
+    max-height: 72px;
+   
+}
+
+
+.counter__input {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+    padding: var(--padding-xs) var(--padding-xl) 0 var(--padding-xl);
+   
+    width: 100%;
+    font-family: var(--font-highlight);
+    font-size: var(--text-title-l) ;
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-text-strong);
+}

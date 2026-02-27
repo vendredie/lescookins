@@ -1,0 +1,388 @@
+/* ===== CORE - VALEURS BRUTES ====================================== */
+
+:root {
+
+/* ===== Colors =====*/
+
+/* Brand */
+--color-brand-cacao: #3D2626;
+--color-brand-vanille: #FFFDDC;
+--color-brand-praline: #C15619;
+--color-brand-praline-20: #c1571933;
+--color-brand-praline-subtle: #DEB9A0;
+--color-brand-sucre: #FFFDFB;
+--color-brand-chocolat: #6A3E3E;
+--color-brand-pate: #EB9E28;
+--color-brand-pate-subtlest: #FEF8EF;
+--color-brand-pate-subtle: #F5D692;
+--color-brand-pate-strong: #712C16;
+--color-brand-anissa: #FACBF5;
+--color-brand-hugo: #BEF3B1;
+--color-brand-sacha: #D5F5FE;
+--color-brand-shannen: #FFD9AA;
+--color-brand-valentin: #D5D3FF;
+
+/* Neutral */
+--color-neutral-transparent: #FFFFFF00;
+--color-neutral-white: #FFFFFF;
+--color-neutral-100: #E7E6E6;
+--color-neutral-200: #D1D0D0; 
+--color-neutral-300: #B1AFB0;
+--color-neutral-400: #898788;
+--color-neutral-500: #6E6C6D;
+--color-neutral-600: #5E5C5D;
+--color-neutral-700: #504E4F;
+--color-neutral-800: #3D3C3C;
+--color-neutral-900: #2E2D2D;
+
+/* Status */
+--color-status-danger: #BD3636;
+--color-status-danger-subtle: #FAE1E1;
+--color-status-success: #086D1D;
+--color-status-success-subtle: #D8FFE0;
+
+
+
+/* ===== Typography ====== */
+
+--font-default: 'Fira Sans', sans-serif ;
+--font-highlight: 'Zain', sans-serif ;
+
+--font-weight-regular: 400;
+--font-weight-bold: 700;
+--font-weight-extrabold: 800;
+--font-weight-black: 900;
+
+
+
+/* ===== Spacing ====== */
+
+--space-025: 0.25rem;
+--space-050: 0.5rem;
+--space-075: 0.75rem;
+--space-100: 1rem;
+--space-150: 1.5rem;
+--space-200: 2rem;
+--space-300: 3rem;
+--space-500: 5rem;
+
+
+
+/* ===== Text-size ==== */
+
+--text-075: 0.75rem ;
+--text-087: 0.875rem;
+--text-100: 1rem;
+--text-125: 1.25rem;
+--text-150: 1.5rem;
+--text-200: 2rem;
+--text-250: 2.5rem ;
+--text-350: 3.5rem ;
+--text-550: 5.5rem ;
+
+
+
+/* ===== Lineheight ==== */
+
+--lineheight-tight: 100%;
+--lineheight-default: 150%;
+--lineheight-loose: 180%;
+
+}
+
+
+
+
+
+/* ===== SÉMANTIQUES - VALEURS CONTEXTUELLES ======================== */
+
+
+
+/* ========================== 
+Mobile (< 768px)
+========================== */
+
+:root {
+
+/* ===== Colors =====*/
+
+/* Background */
+--color-bg-white: var(--color-neutral-white);
+--color-bg-surface: var(--color-brand-sucre);
+--color-bg-alternative: var(--color-brand-pate-subtlest);
+--color-bg-chocolat: var(--color-brand-chocolat);
+--color-bg-error: var(--color-status-danger);
+--color-bg-error-subtle: var(--color-status-danger-subtle);
+--color-bg-primary-subtle: var(--color-brand-praline-subtle);
+--color-bg-highlight-subtle: var(--color-brand-pate-subtle);
+--color-bg-anissa: var(--color-brand-anissa);
+--color-bg-hugo: var(--color-brand-hugo);
+--color-bg-sacha: var(--color-brand-sacha);
+--color-bg-shannen: var(--color-brand-shannen);
+--color-bg-valentin: var(--color-brand-valentin);
+--color-bg-disabled: var(--color-neutral-100);
+--color-bg-transparent: var(--color-neutral-transparent);
+
+/* Border */
+--color-border: var(--color-neutral-200);
+--color-border-praline: var(--color-brand-praline);
+--color-border-pate: var(--color-brand-pate);
+--color-border-error: var(--color-status-danger);
+--color-border-anissa: var(--color-brand-anissa);
+--color-border-hugo: var(--color-brand-hugo);
+--color-border-sacha: var(--color-brand-sacha);
+--color-border-shannen: var(--color-brand-shannen);
+--color-border-valentin: var(--color-brand-valentin);
+
+/* Text */
+--color-text-default: var(--color-neutral-800);
+--color-text-on-color: var(--color-brand-sucre);
+--color-text-strong: var(--color-brand-cacao);
+--color-text-subtle: var(--color-neutral-500);
+--color-text-primary: var(--color-brand-praline);
+--color-text-error: var(--color-status-danger);
+--color-text-disabled: var(--color-neutral-300);
+
+/* Icon */
+--color-icon-default: var(--color-neutral-800);
+--color-icon-on-color: var(--color-brand-sucre);
+--color-icon-strong: var(--color-brand-cacao);
+--color-icon-subtle: var(--color-neutral-500);
+--color-icon-primary: var(--color-brand-praline);
+--color-icon-error: var(--color-status-danger);
+--color-icon-disabled: var(--color-neutral-300);
+
+/* Button */
+--color-button-highlight: var(--color-brand-pate);
+--color-button-highlight-hover: var(--color-neutral-transparent);
+--color-button-primary: var(--color-brand-praline);
+--color-button-primary-hover: var(--color-brand-pate-strong);
+--color-button-secondary: var(--color-neutral-transparent);
+--color-button-secondary-hover: var(--color-brand-praline-subtle);
+
+
+
+/* ===== Spacing ===== */
+
+/* Génériques */
+--padding-xs: var(--space-025);
+--padding-sm: var(--space-075);
+--padding-md: var(--space-100);
+--padding-xl: var(--space-150);
+
+--gap-xs: var(--space-025);
+--gap-sm: var(--space-050);
+--gap-md: var(--space-100);
+--gap-lg: var(--space-200);
+--gap-xl: var(--space-300);
+
+--radius-md: var(--space-100);
+
+/* Body */
+--body-padding-x: var(--space-100);
+--body-padding-y-top: var(--space-200);
+--body-padding-y-bottom: var(--space-100);
+
+/* Button */
+--button-sm-padding-x: var(--space-075);
+--button-sm-padding-y: var(--space-075);
+--button-sm-gap: var(--space-050);
+
+--button-lg-padding-x: var(--space-150);
+--button-lg-padding-y: var(--space-150);
+--button-lg-gap: var(--space-050);
+
+/* Card */
+--card-padding-x: var(--space-100);
+--card-padding-y: var(--space-100);
+--card-gap: var(--space-100);
+
+/* Footer */
+--footer-padding-x: var(--space-100);
+--footer-padding-y-top: var(--space-300);
+--footer-padding-y-bottom: var(--space-300);
+--footer-gap: var(--space-150);
+
+/* Header */
+--header-padding-x: var(--space-100);
+--header-padding-y: var(--space-100);
+
+/* Input */
+--input-padding-x: var(--space-100);
+--input-padding-y: var(--space-075);
+--input-gap: var(--space-025);
+
+
+
+/* ===== Text size ===== */
+
+--text-hero: var(--text-250) ;
+--text-title-xl: var(--text-200);
+--text-title-l: var(--text-150);
+--text-title-m: var(--text-125);
+--text-title-s: var(--text-100);
+--text-subtitle: var(--text-125);
+--text-body-l: var(--text-125);
+--text-body-m: var(--text-100);
+--text-body-s: var(--text-087);
+--text-banner: var(--text-087);
+--text-button-sm: var(--text-125);
+--text-button-lg: var(--text-150)
+
+}
+
+/* ================================================================================================== */
+
+/* ========================== 
+Tablet (768 à 1023px)
+========================== */
+
+@media (min-width: 768px) {
+:root {
+
+/* ===== Spacing ===== */
+
+/* Génériques */
+--padding-xs: var(--space-025);
+--padding-sm: var(--space-100);
+--padding-md: var(--space-150);
+--padding-xl: var(--space-200);
+
+--gap-xs: var(--space-025);
+--gap-sm: var(--space-050);
+--gap-md: var(--space-100);
+--gap-lg: var(--space-200);
+--gap-xl: var(--space-500);
+
+--radius-md: var(--space-100);
+
+/* Body */
+--body-padding-x: var(--space-300);
+--body-padding-y-top: var(--space-300);
+--body-padding-y-bottom: var(--space-300);
+
+/* Button */
+--button-sm-padding-x: var(--space-075);
+--button-sm-padding-y: var(--space-075);
+--button-sm-gap: var(--space-050);
+
+--button-lg-padding-x: var(--space-150);
+--button-lg-padding-y: var(--space-150);
+--button-lg-gap: var(--space-050);
+
+/* Card */
+--card-padding-x: var(--space-200);
+--card-padding-y: var(--space-200);
+--card-gap: var(--space-100);
+
+/* Footer */
+--footer-padding-x: var(--space-300);
+--footer-padding-y-top: var(--space-300);
+--footer-padding-y-bottom: var(--space-300);
+--footer-gap: var(--space-300);
+
+/* Header */
+--header-padding-x: var(--space-300);
+--header-padding-y: var(--space-100);
+
+/* Input */
+--input-padding-x: var(--space-100);
+--input-padding-y: var(--space-075);
+--input-gap: var(--space-025);
+
+
+
+/* ===== Text size ===== */
+
+--text-hero: var(--text-350) ;
+--text-title-xl: var(--text-250);
+--text-title-l: var(--text-200);
+--text-title-m: var(--text-150);
+--text-title-s: var(--text-125);
+--text-subtitle: var(--text-150);
+--text-body-l: var(--text-125);
+--text-body-m: var(--text-100);
+--text-body-s: var(--text-087);
+--text-banner: var(--text-100);
+
+}
+
+}
+
+
+
+
+/* ========================== 
+Desktop (1024px et +)
+========================== */
+
+@media (min-width: 1024px) {
+:root {
+
+/* ===== Spacing ===== */
+
+/* Génériques */
+--padding-xs: var(--space-025);
+--padding-sm: var(--space-100);
+--padding-md: var(--space-200);
+--padding-xl: var(--space-300);
+
+--gap-xs: var(--space-025);
+--gap-sm: var(--space-050);
+--gap-md: var(--space-100);
+--gap-lg: var(--space-200);
+--gap-xl: var(--space-500);
+
+--radius-md: var(--space-100);
+
+/* Body */
+--body-padding-x: var(--space-500);
+--body-padding-y-top: var(--space-500);
+--body-padding-y-bottom: var(--space-500);
+
+/* Button */
+--button-sm-padding-x: var(--space-075);
+--button-sm-padding-y: var(--space-075);
+--button-sm-gap: var(--space-050);
+
+--button-md-padding-x: var(--space-150);
+--button-md-padding-y: var(--space-150);
+--button-md-gap: var(--space-050);
+
+/* Card */
+--card-padding-x: var(--space-300);
+--card-padding-y: var(--space-300);
+--card-gap: var(--space-100);
+
+/* Footer */
+--footer-padding-x: var(--space-500);
+--footer-padding-y-top: var(--space-300);
+--footer-padding-y-bottom: var(--space-500);
+--footer-gap: var(--space-300);
+
+/* Header */
+--header-padding-x: var(--space-500);
+--header-padding-y: var(--space-150);
+
+/* Input */
+--input-padding-x: var(--space-100);
+--input-padding-y: var(--space-075);
+--input-gap: var(--space-025);
+
+
+
+/* ===== Text size ===== */
+
+--text-hero: var(--text-550) ;
+--text-title-xl: var(--text-350);
+--text-title-l: var(--text-250);
+--text-title-m: var(--text-200);
+--text-title-s: var(--text-150);
+--text-subtitle: var(--text-200);
+--text-body-l: var(--text-125);
+--text-body-m: var(--text-100);
+--text-body-s: var(--text-087);
+--text-banner: var(--text-125);
+
+}
+}
