@@ -113,6 +113,7 @@ Mobile (< 768px)
 --color-bg-chocolat: var(--color-brand-chocolat);
 --color-bg-error: var(--color-status-danger);
 --color-bg-error-subtle: var(--color-status-danger-subtle);
+--color-bg-success-subtle: var(--color-status-success-subtle);
 --color-bg-primary-subtle: var(--color-brand-praline-subtle);
 --color-bg-highlight-subtle: var(--color-brand-pate-subtle);
 --color-bg-anissa: var(--color-brand-anissa);

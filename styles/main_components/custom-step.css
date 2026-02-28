@@ -8,7 +8,7 @@
 
 .custom-step__title {
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     gap: var(--gap-sm);
     margin-bottom: var(--gap-sm);
 }
@@ -29,10 +29,15 @@
     background-repeat: no-repeat;
 }
 
+.custom-step__number--error {
+    background-image: url(/media/icons/step_circle_shape_error.svg);
+}
+
 .custom-step__text {
 display: flex;
 flex-direction: column;
- padding-top: var(--padding-xs);
+padding-top: var(--padding-xs);
+gap: var(--gap-sm);
 }
 
 .custom-step__name {
@@ -56,11 +61,28 @@ flex-direction: column;
 color: var(--color-text-primary);
 }
 
-.custom-step__helper {
-    display: block;
-    color: var(--color-text-default);
-    line-height: var(--lineheight-loose);
+.custom-step__mention--error {
+color: var(--color-text-error);
 }
+
+.custom-step__helper {
+    display: inline;
+    color: var(--color-text-default);
+  ;
+}
+
+.custom-step__helper-text {
+    display: inline;
+    color: var(--color-text-default);
+}
+
+.custom-step__error-text {
+    display: none;
+    color: var(--color-text-error);;
+}
+
+.custom-step__helper--error .custom-step__helper-text { display: none; }
+.custom-step__helper--error .custom-step__error-text { display: inline; }
 
 .custom-step__input {
     display: flex;
@@ -68,7 +90,7 @@ color: var(--color-text-primary);
     border-radius: var(--radius-md);
     padding: var(--input-padding-x) var(--input-padding-y);
     background-color: var(--color-bg-white);
-    border-color: 1px solid var(--color-border-default);
+    border-color: 1px solid var(--color-border);
     
 }
 

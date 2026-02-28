@@ -20,13 +20,17 @@ strong {
 /* ======== Alert ======== */
 /* Bloc */
 .alert {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
     padding: var(--padding-md);
     gap: var(--gap-xs);
     border-radius: var(--radius-md);
     font-size: var(--text-body-m);
+}
+
+.alert--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Elements */
@@ -41,8 +45,13 @@ strong {
 
 /* Modifiers */
 .alert--success {
-    background-color: var(--color-status-success-subtle);
-    color: var(--color-status-success);
+    background-color: var(--color-bg-success-subtle);
+    color: var(--color-text-success);
+}
+
+.alert--error {
+    background-color: var(--color-bg-error-subtle);
+    color: var(--color-text-error);
 }
 
 
@@ -175,9 +184,11 @@ main {
 
 /* ======== Tab-content ======== */
 .tab-content {
-   display: none;
+    display: none;
 }
 
 .tab-content--active {
-    display: block;
+    gap: var(--gap-lg);
+    display:flex;
+    flex-direction: column;
 }

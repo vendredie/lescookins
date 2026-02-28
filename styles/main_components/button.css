@@ -1,22 +1,23 @@
 /* ======== Button ======== */
 .button {
-border-radius: var(--radius-md);
-color: var(--color-text-strong);
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-md);
+    color: var(--color-text-strong);
 }
 
 .button__icon {
-    fill: var(--color-text-strong)
+    fill: var(--color-text-strong);
 }
 
-.button--disabled {
-    background-color: var(--color-bg-disabled);
-    color: var(--color-text-disabled);
-    cursor:not-allowed;
-}
+
 
 /* ======== Variations de taille ======== */
 .button--large {
     padding: var(--button-lg-padding-y) var(--button-lg-padding-x);
+    font-family: var(--font-highlight);
+    font-size: var(--text-button-lg);
+    font-weight: var(--font-weight-bold);
 }
 
 /* ======== Variations de style ======== */
@@ -80,3 +81,10 @@ color: var(--color-text-strong);
 }
 
 
+/* == États == */
+.button.button--disabled {
+    background-color: var(--color-bg-transparent);
+    color: var(--color-text-disabled);
+    border-color : var(--color-bg-transparent);
+    cursor:not-allowed;
+}

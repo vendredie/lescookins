@@ -44,7 +44,7 @@
 
 .card__media {
     width: 100%;
-    max-width: 8rem;
+    max-width: 12rem;
     object-fit: cover;
     object-position: center;
 }
@@ -74,7 +74,7 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     gap: var(--gap-md);
+     gap: var(--gap-lg);
 }
 
 
