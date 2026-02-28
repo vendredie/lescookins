@@ -1,0 +1,49 @@
+.button {
+  border-radius: var(--radius-md);
+  color: var(--color-text-strong);
+
+  &__icon {
+    fill: var(--color-text-strong);
+  }
+
+  &--disabled {
+    background-color: var(--color-bg-disabled);
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+  }
+
+  /* Size */
+  &--large {
+    padding: var(--button-lg-padding-y) var(--button-lg-padding-x);
+  }
+
+  /* Primary */
+  &--primary {
+    color: var(--color-text-on-color);
+    background: var(--color-button-primary);
+
+    &:hover {
+    background: var(--color-button-primary-hover);
+    }
+  }
+
+  /* Color Variants */
+  &--anissa,
+  &--hugo,
+  &--sacha,
+  &--shannen,
+  &--valentin {
+    color: var(--color-text-strong);
+    border: 1px solid;
+
+    &:hover {
+    background: var(--color-bg-transparent);
+    }
+  }
+
+  &--anissa   { background: var(--color-bg-anissa);   border-color: var(--color-bg-anissa); }
+  &--hugo     { background: var(--color-bg-hugo);     border-color: var(--color-bg-hugo); }
+  &--sacha    { background: var(--color-bg-sacha);    border-color: var(--color-bg-sacha); }
+  &--shannen  { background: var(--color-bg-shannen);  border-color: var(--color-bg-shannen); }
+  &--valentin { background: var(--color-bg-valentin); border-color: var(--color-bg-valentin); }
+}

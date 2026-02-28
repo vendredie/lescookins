@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les cookins - Cookies sur-mesure en livraison à Lille</title>
+    
+    <!-- Lien vers les styles -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/main_components/card.css">
+    <link rel="stylesheet" href="styles/main_components/button.css">
+    <link rel="stylesheet" href="styles/main_components/custom-step.css">
+
+    <!-- Lien vers les fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+    </header>
+
+    <div class="banner">
+
+    </div>
+
+   // @COMMENT: extensions prettier et eslint
+
+    <main class="body">
+        <section class="page-title">
+            // @COMMENT Finalement j'ai vérifer ça se fait d'ajouter son modifier comme ça my bad je suis matrixé syntaxe Chronodrive => page-title__title--xl 
+            <h1 class="page-title__title--xl">Commander une boîte</h1>
+            <div class="segmented-button">
+                
+                <button class="segmented-button__item">
+                    Originaux 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none" class="segmented-button__icon">
+                    <path d="M2 6.87207C18.3655 2.74463 36.7349 2.09293 25.0453 4.77215C13.3556 7.45136 19.0335 11.0719 32.727 7.16172C46.4206 3.25151 58.4442 -0.369044 50.4285 3.97563C42.4127 8.3203 22.3734 15.9959 49.4265 9.47887C76.4796 2.96187 77.5 4.5 75 8" stroke="#C15619" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="segmented-button__item segmented-button__item--active">
+                    Sur-mesure
+                    <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none" class="segmented-button__icon">
+                    <path d="M2 6.87207C18.3655 2.74463 36.7349 2.09293 25.0453 4.77215C13.3556 7.45136 19.0335 11.0719 32.727 7.16172C46.4206 3.25151 58.4442 -0.369044 50.4285 3.97563C42.4127 8.3203 22.3734 15.9959 49.4265 9.47887C76.4796 2.96187 77.5 4.5 75 8" stroke="#C15619" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <p class="page-title__subtitle">Le cookin de tes rêves en quelques clics : </p>
+        </section>
+
+
+
+        <div class="page-content">
+
+            
+
+            <div class="tab-content">
+
+            <form class="customizer-form">
+
+                <fieldset class="custom-step">
+                    <legend class="custom-step__title">
+                        <span class="custom-step__number">1</span>
+
+                        <span class="custom-step__text">
+                            <span class="custom-step__name">
+                                La base
+                                <span class="custom-step__mention custom-step__mention--required">- obligatoire</span>
+                            </span>
+                            <span class="custom-step__helper">
+                                Choisis la pâte qui te fera fondre.
+                            </span>
+                        </span>
+                    </legend>
+                    
+
+                    <div class="custom-step__options">
+                    <div class="custom-step__option">
+                        <input type="radio" id="vanille" name="pate" value="vanille" aria-required="true">
+                        <label for="vanille" class="card">
+                            <span class="card__title">Vanille</span>
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="cacao" name="pate" value="cacao" aria-required="true">
+                        <label for="cacao" class="card">
+                            <span class="card__title">Cacao</span>    
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="cacahuete" name="pate" value="cacahuete" aria-required="true">
+                        <label for="cacahuete" class="card">
+                           <span class="card__title">Cacahuète</span> 
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="pistache" name="pate" value="pistache" aria-required="true">
+                        <label for="pistache" class="card">
+                            <span class="card__title">Pistache</span> 
+                        </label>
+                    </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="custom-step">
+                    <legend class="custom-step__title">
+                        <span class="custom-step__number">2</span>
+
+                        <span class="custom-step__text">
+                            <span class="custom-step__name">
+                                Les chocolats
+                                <span class="custom-step__mention">- facultatif</span>
+                            </span>
+                            <span class="custom-step__helper">
+                                Tu peux en choisir jusqu'à 3.
+                            </span>
+                        </span>
+                    </legend>
+                    
+
+                    <div class="custom-step__options">
+                    <div class="custom-step__option">
+                        <input type="checkbox" id="noir" name="chocolats" value="noir">
+                        <label for="noir" class="card">
+                            <span class="card__title">Noir</span>
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="checkbox" id="lait" name="chocolats" value="lait">
+                        <label for="lait" class="card">
+                            <span class="card__title">Au lait</span>    
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="checkbox" id="blanc" name="chocolats" value="blanc">
+                        <label for="blanc" class="card">
+                           <span class="card__title">Blanc</span> 
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="checkbox" id="praline" name="chocolats" value="praline">
+                        <label for="praline" class="card">
+                            <span class="card__title">Praliné</span> 
+                        </label>
+                    </div>
+                    </div>
+                </fieldset>
+
+                 <fieldset class="custom-step">
+                    <legend class="custom-step__title">
+                        <span class="custom-step__number">3</span>
+
+                        <span class="custom-step__text">
+                            <span class="custom-step__name">
+                                Les noix
+                                <span class="custom-step__mention">- facultatif</span>
+                            </span>
+                            <span class="custom-step__helper">
+                                Une touche de croquant ?
+                            </span>
+                        </span>
+                    </legend>
+                    
+
+                    <div class="custom-step__options">
+                    <div class="custom-step__option">
+                        <input type="radio" id="sans" name="noix" value="sans">
+                        <label for="sans" class="card">
+                            <span class="card__title">Aucune</span>
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="amandes" name="noix" value="amandes">
+                        <label for="amandes" class="card">
+                            <span class="card__title">Amandes</span>
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="cacahuetes" name="noix" value="cacahuetes">
+                        <label for="cacahuetes" class="card">
+                            <span class="card__title">Cacahuètes</span>    
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="noisettes" name="noix" value="noisettes">
+                        <label for="noisettes" class="card">
+                           <span class="card__title">Noisettes</span> 
+                        </label>
+                    </div>
+                    <div class="custom-step__option">
+                        <input type="radio" id="pistaches" name="noix" value="pistaches">
+                        <label for="pistaches" class="card">
+                            <span class="card__title">Pistaches</span> 
+                        </label>
+                    </div>
+                    </div>
+                </fieldset>
+
+                <div class="custom-step">
+                    <div class="custom-step__title">
+                        <span class="custom-step__number">4</span>
+
+                        <span class="custom-step__text">
+                            <label for="nom-recette" class="custom-step__name">
+                                Le nom de ta recette
+                                <span class="custom-step__mention custom-step__mention--required">- obligatoire</span>
+                            </label>
+                             <span class="custom-step__helper">
+                                Donne un petit nom à ton cookin
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <input type="text" name="nom-recette" id="nom-recette" class="custom-step__input" required aria-required="true" />
+                    </div>
+                </div>
+            </form>
+
+            </div>
+
+    
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    
+
+</body>
