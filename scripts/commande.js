@@ -31,6 +31,25 @@ buttons.forEach(button => {
     });
 });
 
+const boxType = window.location.hash
+if (boxType === "#custom") {
+    // 2.Retirer l'apparence "active" de tous les boutons
+        buttons.forEach(btn => {
+            btn.classList.remove('segmented-button__item--active');
+        });
+
+        // 3. Ajouter l'apparence "active" sur le bouton cliqué
+        document.querySelector('[data-tab="custom"]').classList.add('segmented-button__item--active');;
+
+        //4. Retirer la classe "active" des 2 sections de contenu
+        tabs.forEach(tab => {
+            tab.classList.remove('tab-content--active');
+        });
+
+        //5. Ajouter la classe "active" sur la section Custom :
+        document.querySelector('#tab-custom').classList.add('tab-content--active');
+
+}
 // --------------------------------------------------------------------------------
 
 // --- Counter buttons dynamiques --- //

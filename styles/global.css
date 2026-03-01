@@ -24,7 +24,7 @@ strong {
     padding: var(--padding-md);
     gap: var(--gap-xs);
     border-radius: var(--radius-md);
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
 }
 
 .alert--active {
@@ -35,12 +35,12 @@ strong {
 
 /* Elements */
 .alert__title {
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
     font-weight: bold;
 }
 
 .alert__description {
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
 }
 
 /* Modifiers */
@@ -191,4 +191,29 @@ main {
     gap: var(--gap-lg);
     display:flex;
     flex-direction: column;
+}
+
+/* ===== Title ===== */
+.title--xl {
+    font-family: var(--font-highlight);
+    font-size: var(--text-title-xl);
+    line-height: var(--lineheight-tight);
+    color: var(--color-text-strong);
+    font-weight: var(--font-weight-black);
+}
+
+.title--lg {
+    font-family: var(--font-highlight);
+    font-size: var(--text-title-lg);
+    line-height: var(--lineheight-tight);
+    color: var(--color-text-strong);
+    font-weight: var(--font-weight-extrabold);
+}
+
+.title--md {
+    font-family: var(--font-highlight);
+    font-size: var(--text-title-md);
+    line-height: var(--lineheight-tight);
+    color: var(--color-text-strong);
+    font-weight: var(--font-weight-extrabold);
 }

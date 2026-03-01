@@ -30,7 +30,7 @@
 /* Elements */
 .card__description {
     font-family: var(--font-default);
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
     color: var(--color-text-subtle);
     text-align: center ;
 }
@@ -51,20 +51,20 @@
 
 .card__price {
     font-family: var(--font-default);
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
     color: var(--color-text-strong);
 }
 
 .card__title {
     font-family: var(--font-highlight);
-    font-size: var(--text-title-m);
+    font-size: var(--text-title-md);
     color: var(--color-text-strong);
     text-align: center;
     }
 
 .card__type {
     font-family: var(--font-default);
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
     color: var(--color-text-subtle);
 }
 
@@ -135,7 +135,7 @@
    
     width: 100%;
     font-family: var(--font-highlight);
-    font-size: var(--text-title-l) ;
+    font-size: var(--text-title-lg) ;
     font-weight: var(--font-weight-extrabold);
     color: var(--color-text-strong);
 }

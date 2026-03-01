@@ -21,7 +21,7 @@
     height: 3.5rem;
     font-family: var(--font-highlight);
     color: var(--color-text-on-color);
-    font-size: var(--text-title-l);
+    font-size: var(--text-title-lg);
     font-weight: var(--font-weight-extrabold);
     padding-top: var(--padding-xs);
     background-image: url(/media/icons/step_circle_shape.svg);
@@ -44,7 +44,7 @@ gap: var(--gap-sm);
     display: flex;
     font-family: var(--font-highlight);
     font-weight: var(--font-weight-extrabold);
-    font-size: var(--text-title-m);
+    font-size: var(--text-title-md);
     color: var(--color-text-strong);
     align-items: center;
     gap: var(--gap-xs);
@@ -53,7 +53,7 @@ gap: var(--gap-sm);
 .custom-step__mention {
     font-family: var(--font-default);
     color: var(--color-text-subtle);
-    font-size: var(--text-body-m);
+    font-size: var(--text-body-md);
     font-weight: var(--font-weight-regular);
 }
 
@@ -85,13 +85,15 @@ color: var(--color-text-error);
 .custom-step__helper--error .custom-step__error-text { display: inline; }
 
 .custom-step__input {
-    display: flex;
-    font-size: var(--text-body-l);
+   display: flex;
+    font-size: var(--text-body-lg);
     border-radius: var(--radius-md);
-    padding: var(--input-padding-x) var(--input-padding-y);
+    padding: var(--padding-sm) var(--input-padding-x);
     background-color: var(--color-bg-white);
-    border-color: 1px solid var(--color-border);
-    
+    border: solid 1px var(--color-border);
+}
+.custom-step__input:focus-within {
+    border-color: var(--color-border-focus);
 }
 
 
