@@ -134,6 +134,7 @@ Mobile (< 768px)
 --color-border-sacha: var(--color-brand-sacha);
 --color-border-shannen: var(--color-brand-shannen);
 --color-border-valentin: var(--color-brand-valentin);
+--color-border-focus: var(--color-brand-praline);
 
 /* Text */
 --color-text-default: var(--color-neutral-800);
@@ -219,13 +220,13 @@ Mobile (< 768px)
 
 --text-hero: var(--text-250) ;
 --text-title-xl: var(--text-200);
---text-title-l: var(--text-150);
---text-title-m: var(--text-125);
---text-title-s: var(--text-100);
+--text-title-lg: var(--text-150);
+--text-title-md: var(--text-125);
+--text-title-sm: var(--text-100);
 --text-subtitle: var(--text-125);
---text-body-l: var(--text-125);
---text-body-m: var(--text-100);
---text-body-s: var(--text-087);
+--text-body-lg: var(--text-125);
+--text-body-md: var(--text-100);
+--text-body-sm: var(--text-087);
 --text-banner: var(--text-087);
 --text-button-sm: var(--text-125);
 --text-button-lg: var(--text-150)
@@ -297,13 +298,13 @@ Tablet (768 à 1023px)
 
 --text-hero: var(--text-350) ;
 --text-title-xl: var(--text-250);
---text-title-l: var(--text-200);
---text-title-m: var(--text-150);
---text-title-s: var(--text-125);
+--text-title-lg: var(--text-200);
+--text-title-md: var(--text-150);
+--text-title-sm: var(--text-125);
 --text-subtitle: var(--text-150);
---text-body-l: var(--text-125);
---text-body-m: var(--text-100);
---text-body-s: var(--text-087);
+--text-body-lg: var(--text-125);
+--text-body-md: var(--text-100);
+--text-body-sm: var(--text-087);
 --text-banner: var(--text-100);
 
 }
@@ -376,13 +377,13 @@ Desktop (1024px et +)
 
 --text-hero: var(--text-550) ;
 --text-title-xl: var(--text-350);
---text-title-l: var(--text-250);
---text-title-m: var(--text-200);
---text-title-s: var(--text-150);
+--text-title-lg: var(--text-250);
+--text-title-md: var(--text-200);
+--text-title-sm: var(--text-150);
 --text-subtitle: var(--text-200);
---text-body-l: var(--text-125);
---text-body-m: var(--text-100);
---text-body-s: var(--text-087);
+--text-body-lg: var(--text-125);
+--text-body-md: var(--text-100);
+--text-body-sm: var(--text-087);
 --text-banner: var(--text-125);
 
 }

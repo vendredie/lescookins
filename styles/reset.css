@@ -34,6 +34,14 @@ button {
     cursor: pointer; /* Curseur pointer par défaut */
 }
 
+input[type="text"], input[type="email"], input[type="tel"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+	color: var(--color-text-default);
+}
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
