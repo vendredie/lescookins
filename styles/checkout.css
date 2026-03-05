@@ -119,6 +119,37 @@
 }
 
 
+/* === Order recap === */
+.order-recap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+   
+}
+
+.order-recap__item {
+    display: flex;
+    gap: var(--gap-xs);
+    color: var(--color-text-subtle);
+
+}
+
+.order-recap__value {
+    color: var(--color-text-strong);
+    font-weight: var(--font-weight-bold);
+}
+
+.order-recap__wrapper {
+    display: none;
+}
+
+.order-recap__wrapper--active {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+    flex-wrap: wrap;  
+}
+
 /* === Text input === */
 .text-input {
     display: flex;
