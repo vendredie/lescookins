@@ -143,14 +143,35 @@ const activeTabId = activeTab.id;
 // Fonction de validation : tab OG
 if (activeTabId === "tab-og") {
     const total = calculateTotal();
-    //Si total = 4, redirection vers le checkout
+    //Si total = 4, stockage de la commande et redirection vers le checkout
     if (total === MAX_TOTAL) {
-        window.location.href = "checkout.html";
+
+        // 1. Construire l'objet commande
+            const commandeOG = {
+                type: "og",
+                cookins: []
+            };
+
+        // 2. Parcourir chaque counter et récupérer le nom + la quantité
+            counters.forEach(counter => {
+                const nom = counter.closest('.counter-card').querySelector('.card__title strong').textContent;
+                const quantite = parseInt(counter.querySelector('.counter__input').textContent);
+                if (quantite > 0) {
+                    commandeOG.cookins.push({ nom, quantite });
+                }
+            });
+            
+        // 3. Sauvegarder dans le localStorage
+            localStorage.setItem('commande', JSON.stringify(commandeOG));
+            window.location.href = "checkout.html";
     } else {
-    //Sinon, ajouter la classe "active" sur l'alerte':
+
+        //Sinon, ajouter la classe "active" sur l'alerte':
         const alert = activeTab.querySelector('.alert');
         alert.classList.add('alert--active');
     }
+
+    // --------------------------------------------------------------------------------
 
     // Fonction de validation : tab Custom
 } else {
@@ -203,16 +224,26 @@ if (activeTabId === "tab-og") {
             });
         }
     
-    
+    // Si au moins l'un des champs obligatoires est vide ; alors on ajoute la classe "active" sur l'alerte':
      if (base === null || noix === null || nomRecette.value === "") {
         const alert = activeTab.querySelector('.alert');
         alert.classList.add('alert--active');
     }
-    // Si oui ; alors on peut suivre le lien indiqué dans le bouton ; 
+    // Si tous les champs sont complets ; alors on peut stocker la recette et aller au checkout
      else {
+        const commandeCustom = {
+            type: "custom",
+            nom: nomRecette.value,
+            base: base.value,
+            chocolats: Array.from(document.querySelectorAll('input[name="chocolats"]:checked')).map(i => i.value),
+            noix: noix ? noix.value : null
+        };
+
+        localStorage.setItem('commande', JSON.stringify(commandeCustom));
+
         window.location.href = "checkout.html";
     }
 }
 
-})
+});
 
